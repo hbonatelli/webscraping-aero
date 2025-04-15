@@ -78,7 +78,7 @@ const scrapeFlights = async ({ origin, destination, departureDate }) => {
     await delay(2000);
 
     console.log('Clicando no botão "Buscar"...');
-    await page.click('button#submitSearch.btn.btn-primary'); //button#submitSearch
+    await page.click('button#submitSearch'); //button#submitSearch
     await delay(3000);
 
     const alertSelector = '.alert.alert-warning';
